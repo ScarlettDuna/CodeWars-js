@@ -63,7 +63,6 @@ console.log(resumenMovimientos2);
 // Usa reduce() para obtener un objeto que indique cuántos ingresos y cuántos gastos hay.
 let conteo = movimientos.reduce((acc, mov) => {
   if (mov.tipo === "ingreso") {
-    // acc[color] = (acc[color] || 0) + 1;
     acc.ingresos += 1;
   } else if (mov.tipo === "gasto") {
     acc.gastos += 1;
